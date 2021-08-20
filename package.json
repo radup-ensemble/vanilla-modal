@@ -1,0 +1,19 @@
+{
+  "name": "vanilla-modal-example",
+  "version": "1.0.0",
+  "description": "Vanilla JS Modal",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radup-ensemble/vanilla-modal.git"
+  },
+  "author": "Radu Pop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/radup-ensemble/vanilla-modal/issues"
+  },
+  "homepage": "https://github.com/radup-ensemble/vanilla-modal#readme"
+}

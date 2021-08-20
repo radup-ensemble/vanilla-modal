@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Modal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="btn-group">
+    <button type="button" class="open-modal" data-open="modal1">
+        Open modal
+    </button>
+</div>
+
+<div class="modal" id="modal1">
+    <div class="modal-dialog">
+        <header class="modal-header">
+            Updates to the Developer Terms of Use
+            <button class="close-modal" aria-label="close modal" data-close>
+                ✕
+            </button>
+        </header>
+        <section class="modal-content">
+            <p>The Adobe Developer Terms of Use have recently been updated and
+            you must read and accept the updated terms before continuing to
+            access the Adobe Developer Console and use the Adobe Developer
+            Tools.</p>
+            <br/>
+            <a href="https://www.adobe.com/go/developer-terms">Adobe Developer Terms of Use</a>
+            <br/>
+            <p>By clicking “Accept and continue”, you confirm that you have read and
+            accepted the Adobe Developer Terms of Use for
+                <b>ens28048@adobe.com</b> in <b>ens28048-adobe.com</b> organization and
+            that you are authorized to do so on behalf of the organization.</p>
+        </section>
+        <footer class="modal-footer">
+            <button type="button" class="open-modal" id="acceptBtn">Accept and continue</button>
+        </footer>
+    </div>
+</div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
