@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Demo Console Modal</title>
+  <link rel="stylesheet" href="./../dist/console-dev-modal.min.css">
+</head>
+
+<body>
+<div class="btn-group">
+  <button type="button" class="open-modal" data-open="modal1">
+    Open modal
+  </button>
+</div>
+<script src="./../dist/console-dev-modal.min.js"></script>
+<script>
+  const openEls = document.querySelectorAll("[data-open]");
+
+  for (const el of openEls) {
+    el.addEventListener("click", function() {
+      let modal = new ConsoleDevModal({
+        orgId: 393039,
+        orgName: 'ens28048-adobe.com',
+        email:'ens28048@adobe.com',
+        userToken: 'eyJhbGciOiJSUzI1NiIsIng1dSI6Imltc19uYTEta2V5LTEuY2VyIn0.eyJpZCI6IjE2Mjk3MDM3NDg5NjVfMmViNjE5NjYtYTQ4YS00MDJhLWIxZGMtYWZhY2UyY2NhN2VmX3VlMSIsInR5cGUiOiJhY2Nlc3NfdG9rZW4iLCJjbGllbnRfaWQiOiJVRFBXZWIxIiwidXNlcl9pZCI6Ijg0MjEwNDAzNUZBNDU3MkUwQTQ5NUM1N0BBZG9iZUlEIiwic3RhdGUiOiJ7XCJqc2xpYnZlclwiOlwidjItdjAuMTcuMC05LWdjODBkNTM3XCIsXCJub25jZVwiOlwiMzMzOTI5NjExNzI5NzI5MlwiLFwic2Vzc2lvblwiOlwiaHR0cHM6Ly9pbXMtbmExLmFkb2JlbG9naW4uY29tL2ltcy9zZXNzaW9uL3YxL05qQTROR1ZrWkdFdFlqazJOQzAwT0Rsa0xXSXdNbVV0TW1Gak1qUTNZak14WWpJeUxTMDROREl4TURRd016VkdRVFExTnpKRk1FRTBPVFZETlRkQVFXUnZZbVZKUkFcIn0iLCJhcyI6Imltcy1uYTEiLCJhYV9pZCI6Ijg0MjEwNDAzNUZBNDU3MkUwQTQ5NUM1N0BBZG9iZUlEIiwiZmciOiJWV1pXQ0RFRVhMTzdQSDRPR01aUlQ3UUEzTT09PT09PSIsInNpZCI6IjE2Mjk3MDM3NDgyNTBfNTQ2ZThlYTktNDgzZi00MTQ0LWJjODUtMWYwMmU0Yzc5MjVhX3VlMSIsIm1vaSI6IjcyYzJhODZmIiwiZXhwaXJlc19pbiI6Ijg2NDAwMDAwIiwic2NvcGUiOiJBZG9iZUlELG9wZW5pZCxhZG9iZWlvX2FwaSxnbmF2LHJlYWRfb3JnYW5pemF0aW9ucyxhZGRpdGlvbmFsX2luZm8ucHJvamVjdGVkUHJvZHVjdENvbnRleHQsdW5pZmllZF9kZXZfcG9ydGFsLGFkZGl0aW9uYWxfaW5mby5yb2xlcyxyZWFkX3BjLmRtYV9idWxsc2V5ZSxzZXNzaW9uLGFkb2JlaW8uYXBwcmVnaXN0cnkucmVhZCxhZG9iZWlvLmFwcHJlZ2lzdHJ5LndyaXRlLHNhby5jcmVhdGl2ZV9jbG91ZCx0ZXN0LXVzZXJzLnJlYWQsdGVzdC11c2Vycy53cml0ZSxjbGllbnQucmVhZCIsImNyZWF0ZWRfYXQiOiIxNjI5NzAzNzQ4OTY1In0.nSeRPrkmpmyMXHcn29vnmn9g1XeMwv9SzN_snjI25UNWtGeOJwMiN_ClLKvJ0FTXbNMRjn-wOoFMaqO8jreyOThWNE4Hkkc1Wc_PSDGRHUea1wsrpiFdhjcm_TgS-1ryy7_eLpPoWrjLvWnabTLkz6STQOhw1LiC9Xv4DIeOyIKTVwUPuNyICM5EEfJ_bkebdlojICo4nnzdRUolpcwfBGy5vKtHEZFfpvv4AbRkPssc-QmE64aOwLQv6jrxSc6Bm3fh-l6JGK1hhsLoUXHIu4y7p8m5lifexMSvMUbWCkH2BAeaEdR-eXih9lfCL9S29_pV9uopi3oF0V5Yn_m1_w',
+        env: 'prod',
+      })
+    });
+  }
+</script>
+</body>
+
+</html>
