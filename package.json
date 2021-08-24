@@ -4,7 +4,10 @@
   "description": "Console Dev Terms Modal",
   "main": "src/console-dev-modal.js",
   "scripts": {
-    "test": "npm test",
+    "test": "npm run prettier:check && npm run lint && jest --coverage",
+    "lint": "eslint -f table --fix .",
+    "prettier:check": "prettier --check '{src,test}/**/*.js' --config ./.prettierrc",
+    "prettier:fix": "prettier --write '{src,test}/**/*.js' --config ./.prettierrc",
     "build": "webpack",
     "dev": "webpack --mode development"
   },
@@ -20,16 +23,21 @@
   "homepage": "https://github.com/radup-ensemble/vanilla-modal#readme",
   "devDependencies": {
     "@babel/core": "^7.11.4",
+    "@babel/eslint-parser": "^7.14.7",
     "@babel/plugin-transform-object-assign": "^7.10.4",
     "@babel/preset-env": "^7.11.0",
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^6.0.3",
     "css-loader": "^4.2.2",
+    "eslint": "^7.29.0",
+    "eslint-plugin-jest": "^24.3.6",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "4.0.0",
+    "jest": "^27.0.6",
     "mini-css-extract-plugin": "^0.11.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "prettier": "^2.3.2",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
